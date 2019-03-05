@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int coutnpath(int n,int m)
+{
+	if(n==0 || m==0)
+		return 1;
+
+	else
+	     return(coutnpath(n-1,m)+coutnpath(n,m-1));	
+}
+
+
+int main()
+{
+	int a=3,b=0;
+	cout<<coutnpath(a,b);
+	return 0;
+}
